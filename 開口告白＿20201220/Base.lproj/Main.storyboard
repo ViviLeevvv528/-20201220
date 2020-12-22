@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="開口告白_20201220" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroud1" translatesAutoresizingMaskIntoConstraints="NO" id="FsX-uw-dxh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="29" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="JhP-gA-gFI">
+                                <rect key="frame" x="57" y="121" width="260" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="13" right="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="voice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="end-5c-pqM">
+                                <rect key="frame" x="275" y="194" width="52" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="0.090185575187206268" green="0.17119649052619934" blue="0.43375974893569946" alpha="0.9997558594" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.5" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-uk-9RG">
+                                <rect key="frame" x="182" y="194" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tuneSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hKB-wm-fON"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.10000000000000001" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yNP-tL-Qpl">
+                                <rect key="frame" x="182" y="238" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tuneSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="qqb-DW-61Z"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-5P-Dr8">
+                                <rect key="frame" x="272" y="238" width="55" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" red="0.090185575187206268" green="0.17119649052619934" blue="0.43375974893569946" alpha="0.9997558594" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="速度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b86-uJ-due">
+                                <rect key="frame" x="136" y="243" width="34" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.090185575187206268" green="0.17119649052619934" blue="0.43375974893569946" alpha="0.9997558594" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="音調" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeG-zb-fCJ">
+                                <rect key="frame" x="136" y="196" width="34" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" red="0.090185575187206268" green="0.17119649052619934" blue="0.43375974893569946" alpha="0.9997558594" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnd-3d-XVA">
+                                <rect key="frame" x="28" y="177" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                <state key="normal" image="talk"/>
+                                <connections>
+                                    <action selector="talkStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgy-FV-uj0"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PJr-DU-OjV">
+                                <rect key="frame" x="216" y="361" width="111" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="中文"/>
+                                    <segment title="英文"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tlg-Mh-E1A"/>
+                                    <action selector="languageSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="OFP-zn-7rI"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="動物的名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-xh-6Y5">
+                                <rect key="frame" x="46" y="362" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" red="0.090185575187206268" green="0.17119649052619934" blue="0.43375974893569946" alpha="0.999755859375" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgH-KN-4E8">
+                                <rect key="frame" x="28" y="429" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cat"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhF-QG-lii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-xR-qgj">
+                                <rect key="frame" x="28" y="669" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="pig"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2U-na-xlo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3n-7p-iY2">
+                                <rect key="frame" x="142" y="669" width="90" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sheep"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tKH-uJ-IJk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oM-2Z-70L">
+                                <rect key="frame" x="142" y="546" width="90" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="monkey"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuD-br-341"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-2C-wgg">
+                                <rect key="frame" x="147" y="429" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frog"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GgE-14-gVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aez-JM-KSA">
+                                <rect key="frame" x="247" y="669" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tiger"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgu-PJ-haT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNd-EU-dYW">
+                                <rect key="frame" x="247" y="546" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="lion"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKi-E7-aBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRG-6l-JfI">
+                                <rect key="frame" x="28" y="546" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="panda"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAi-4f-HpT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHn-s1-2mk">
+                                <rect key="frame" x="254" y="434" width="90" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="dog"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8C-Ag-D5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="catBtn" destination="LgH-KN-4E8" id="spL-xj-lCu"/>
+                        <outlet property="dogBtn" destination="GHn-s1-2mk" id="NVl-sF-OEZ"/>
+                        <outlet property="fragBtn" destination="dcA-2C-wgg" id="63d-QL-iCN"/>
+                        <outlet property="languageSegment" destination="PJr-DU-OjV" id="eog-qW-bsK"/>
+                        <outlet property="lionBtn" destination="CNd-EU-dYW" id="1Kz-Vr-fDe"/>
+                        <outlet property="monkeyBtn" destination="4oM-2Z-70L" id="3CF-Yw-kxk"/>
+                        <outlet property="pandaBtn" destination="HRG-6l-JfI" id="2NE-lN-GVy"/>
+                        <outlet property="pigBtn" destination="Rsg-xR-qgj" id="2hJ-JR-bWR"/>
+                        <outlet property="pitchSlider" destination="HhP-uk-9RG" id="hii-jP-Pp4"/>
+                        <outlet property="pitchText" destination="end-5c-pqM" id="cLV-X7-nrQ"/>
+                        <outlet property="sheepBtn" destination="s3n-7p-iY2" id="oWt-q3-jzx"/>
+                        <outlet property="speedSlider" destination="yNP-tL-Qpl" id="GgA-sg-ESt"/>
+                        <outlet property="speedText" destination="qp5-5P-Dr8" id="xlo-zn-blY"/>
+                        <outlet property="talkButton" destination="vnd-3d-XVA" id="Vj9-B0-FeT"/>
+                        <outlet property="talkField" destination="JhP-gA-gFI" id="9YU-jT-FBz"/>
+                        <outlet property="tigerBtn" destination="Aez-JM-KSA" id="KQd-d9-Asy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="90.886699507389167"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroud1" width="1920" height="1080"/>
+        <image name="cat" width="185" height="157"/>
+        <image name="dog" width="221" height="171"/>
+        <image name="frog" width="201" height="168"/>
+        <image name="lion" width="226" height="214"/>
+        <image name="monkey" width="241" height="186"/>
+        <image name="panda" width="191" height="187"/>
+        <image name="pig" width="213" height="172"/>
+        <image name="sheep" width="258" height="179"/>
+        <image name="talk" width="343" height="340"/>
+        <image name="tiger" width="199" height="177"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

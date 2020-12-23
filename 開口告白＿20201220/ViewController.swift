@@ -35,70 +35,74 @@ class ViewController: UIViewController {
         synthesizer.speak(sayLove)
     }
 //    @IBAction func languageSegment(_ sender: UISegmentedControl) {
-
-//                }
+//
+//                
 //    }
     @IBAction func animalTalk(_ sender: UIButton) {
-                let animalmessage = AVSpeechUtterance()
+                var animalmessage = AVSpeechUtterance()
                 if languageSegment.selectedSegmentIndex == 0{
                     animalmessage.voice = AVSpeechSynthesisVoice(language: "zh-TW")
                     if sender == catBtn{
-                        let CatName = AVSpeechUtterance(string: "貓")
+                        animalmessage = AVSpeechUtterance(string: "貓")
                     }
-                    if sender == fragBtn{
-                        let FragName = AVSpeechUtterance(string: "青蛙")
+                    else if sender == fragBtn{
+                        animalmessage = AVSpeechUtterance(string: "青蛙")
                     }
-                    if sender == dogBtn{
-                        let CatName = AVSpeechUtterance(string: "狗")
+//                    else if sender == dogBtn{
+//                        animalmessage = AVSpeechUtterance(string: "狗")
+//                    }
+                    else {
+                        animalmessage = AVSpeechUtterance(string: "狗")
                     }
-                    if sender == pandaBtn{
-                        let PandaName = AVSpeechUtterance(string: "熊貓")
-                    }
-                    if sender == monkeyBtn{
-                        let MonkeyName = AVSpeechUtterance(string: "猴子")
-                    }
-                    if sender == lionBtn{
-                        let LionName = AVSpeechUtterance(string: "獅子")
-                    }
-                    if sender == pigBtn{
-                        let PigName = AVSpeechUtterance(string: "小豬")
-                    }
-                    if sender == sheepBtn{
-                        let SheepName = AVSpeechUtterance(string: "綿羊")
-                    }
-                    if sender == tigerBtn{
-                        let TigerName = AVSpeechUtterance(string: "老虎")
-                    }
+//                    else if sender == pandaBtn{
+//                        let PandaName = AVSpeechUtterance(string: "熊貓")
+//                    }
+//                    else if sender == monkeyBtn{
+//                        let MonkeyName = AVSpeechUtterance(string: "猴子")
+//                    }
+//                    else if sender == lionBtn{
+//                        let LionName = AVSpeechUtterance(string: "獅子")
+//                    }
+//                    else if sender == pigBtn{
+//                        let PigName = AVSpeechUtterance(string: "小豬")
+//                    }
+//                    else if sender == sheepBtn{
+//                        let SheepName = AVSpeechUtterance(string: "綿羊")
+//                    }
+//                    if sender == tigerBtn{
+//                        let TigerName = AVSpeechUtterance(string: "老虎")
+//                    }
                         }
-                else if languageSegment.selectedSegmentIndex == 1{
+//                else if languageSegment.selectedSegmentIndex == 1{
+                else {
                             animalmessage.voice = AVSpeechSynthesisVoice(language: "en-US")
                     if sender == catBtn{
-                        let CatName = AVSpeechUtterance(string: "cat")
+                        animalmessage = AVSpeechUtterance(string: "cat")
                     }
                     if sender == fragBtn{
-                        let FragName = AVSpeechUtterance(string: "frag")
+                        animalmessage = AVSpeechUtterance(string: "frag")
                     }
                     if sender == dogBtn{
-                        let CatName = AVSpeechUtterance(string: "dog")
+                        animalmessage = AVSpeechUtterance(string: "dog")
                     }
-                    if sender == pandaBtn{
-                        let PandaName = AVSpeechUtterance(string: "panda")
-                    }
-                    if sender == monkeyBtn{
-                        let MonkeyName = AVSpeechUtterance(string: "monkey")
-                    }
-                    if sender == lionBtn{
-                        let LionName = AVSpeechUtterance(string: "lion")
-                    }
-                    if sender == pigBtn{
-                        let PigName = AVSpeechUtterance(string: "pig")
-                    }
-                    if sender == sheepBtn{
-                        let SheepName = AVSpeechUtterance(string: "sheep")
-                    }
-                    if sender == tigerBtn{
-                        let TigerName = AVSpeechUtterance(string: "tiger")
-                    }
+//                    if sender == pandaBtn{
+//                        let PandaName = AVSpeechUtterance(string: "panda")
+//                    }
+//                    if sender == monkeyBtn{
+//                        let MonkeyName = AVSpeechUtterance(string: "monkey")
+//                    }
+//                    if sender == lionBtn{
+//                        let LionName = AVSpeechUtterance(string: "lion")
+//                    }
+//                    if sender == pigBtn{
+//                        let PigName = AVSpeechUtterance(string: "pig")
+//                    }
+//                    if sender == sheepBtn{
+//                        let SheepName = AVSpeechUtterance(string: "sheep")
+//                    }
+//                    if sender == tigerBtn{
+//                        let TigerName = AVSpeechUtterance(string: "tiger")
+//                    }
                         }
 
         let synthesizer = AVSpeechSynthesizer()

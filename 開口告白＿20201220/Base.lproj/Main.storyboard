@@ -87,10 +87,6 @@
                                     <segment title="中文"/>
                                     <segment title="英文"/>
                                 </segments>
-                                <connections>
-                                    <action selector="languageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tlg-Mh-E1A"/>
-                                    <action selector="languageSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="OFP-zn-7rI"/>
-                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="動物的名稱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ao1-xh-6Y5">
                                 <rect key="frame" x="46" y="362" width="150" height="30"/>

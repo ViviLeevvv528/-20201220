@@ -97,14 +97,6 @@
                                 <color key="highlightedColor" systemColor="labelColor"/>
                                 <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgH-KN-4E8">
-                                <rect key="frame" x="28" y="429" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cat"/>
-                                <connections>
-                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhF-QG-lii"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-xR-qgj">
                                 <rect key="frame" x="28" y="669" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -130,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-2C-wgg">
-                                <rect key="frame" x="147" y="429" width="80" height="80"/>
+                                <rect key="frame" x="147" y="431" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="frog"/>
                                 <connections>
@@ -138,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aez-JM-KSA">
-                                <rect key="frame" x="247" y="669" width="80" height="80"/>
+                                <rect key="frame" x="259" y="669" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tiger"/>
                                 <connections>
@@ -146,7 +138,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNd-EU-dYW">
-                                <rect key="frame" x="247" y="546" width="80" height="80"/>
+                                <rect key="frame" x="261" y="546" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="lion"/>
                                 <connections>
@@ -167,6 +159,14 @@
                                 <state key="normal" image="dog"/>
                                 <connections>
                                     <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8C-Ag-D5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgH-KN-4E8">
+                                <rect key="frame" x="28" y="429" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cat"/>
+                                <connections>
+                                    <action selector="animalTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhF-QG-lii"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -34,25 +34,73 @@ class ViewController: UIViewController {
           sayLove.rate = speedSlider.value
         synthesizer.speak(sayLove)
     }
-    var animalmessage = AVSpeechUtterance(string: "")
-    @IBAction func languageSegment(_ sender: UISegmentedControl) {
-//        let animalmessage = AVSpeechUtterance()
-        if languageSegment.selectedSegmentIndex == 0{
-            animalmessage.voice = AVSpeechSynthesisVoice(language: "zh-TW")
-                }
-        else if languageSegment.selectedSegmentIndex == 1{
-                    animalmessage.voice = AVSpeechSynthesisVoice(language: "en-US")
-                }
-    }
+//    @IBAction func languageSegment(_ sender: UISegmentedControl) {
 
+//                }
+//    }
     @IBAction func animalTalk(_ sender: UIButton) {
-//        let animalArray = [catBtn,fragBtn,dogBtn,pandaBtn,monkeyBtn,lionBtn,pigBtn,sheepBtn,tigerBtn]
-//        let chineseArray=["貓","青蛙","狗","熊貓","猴子","獅子","豬","綿羊","老虎"]
-//        let englishArray=["cat","frag","dog","panda","monkey","lion","pig","sheep","tiger"]
-//        let chineseTalk = chineseArray[IndexPath.row]
-//        let englishTalk = englishArray[IndexPath.row]
-        
-        animalmessage = AVSpeechUtterance(string: "cat")
+                let animalmessage = AVSpeechUtterance()
+                if languageSegment.selectedSegmentIndex == 0{
+                    animalmessage.voice = AVSpeechSynthesisVoice(language: "zh-TW")
+                    if sender == catBtn{
+                        let CatName = AVSpeechUtterance(string: "貓")
+                    }
+                    if sender == fragBtn{
+                        let FragName = AVSpeechUtterance(string: "青蛙")
+                    }
+                    if sender == dogBtn{
+                        let CatName = AVSpeechUtterance(string: "狗")
+                    }
+                    if sender == pandaBtn{
+                        let PandaName = AVSpeechUtterance(string: "熊貓")
+                    }
+                    if sender == monkeyBtn{
+                        let MonkeyName = AVSpeechUtterance(string: "猴子")
+                    }
+                    if sender == lionBtn{
+                        let LionName = AVSpeechUtterance(string: "獅子")
+                    }
+                    if sender == pigBtn{
+                        let PigName = AVSpeechUtterance(string: "小豬")
+                    }
+                    if sender == sheepBtn{
+                        let SheepName = AVSpeechUtterance(string: "綿羊")
+                    }
+                    if sender == tigerBtn{
+                        let TigerName = AVSpeechUtterance(string: "老虎")
+                    }
+                        }
+                else if languageSegment.selectedSegmentIndex == 1{
+                            animalmessage.voice = AVSpeechSynthesisVoice(language: "en-US")
+                    if sender == catBtn{
+                        let CatName = AVSpeechUtterance(string: "cat")
+                    }
+                    if sender == fragBtn{
+                        let FragName = AVSpeechUtterance(string: "frag")
+                    }
+                    if sender == dogBtn{
+                        let CatName = AVSpeechUtterance(string: "dog")
+                    }
+                    if sender == pandaBtn{
+                        let PandaName = AVSpeechUtterance(string: "panda")
+                    }
+                    if sender == monkeyBtn{
+                        let MonkeyName = AVSpeechUtterance(string: "monkey")
+                    }
+                    if sender == lionBtn{
+                        let LionName = AVSpeechUtterance(string: "lion")
+                    }
+                    if sender == pigBtn{
+                        let PigName = AVSpeechUtterance(string: "pig")
+                    }
+                    if sender == sheepBtn{
+                        let SheepName = AVSpeechUtterance(string: "sheep")
+                    }
+                    if sender == tigerBtn{
+                        let TigerName = AVSpeechUtterance(string: "tiger")
+                    }
+                        }
+
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(animalmessage)
     }
